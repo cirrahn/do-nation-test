@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = ">=3.2.4"
+
+[dev-packages]
+# Format
+black = "==21.6b0"
+
+# Lint
+mypy = ">=0.910"
+flake8 = ">=3.9.2"
+
+[requires]
+python_version = "3.9"
