@@ -1,0 +1,10 @@
+<h1>{{ user.email }}'s Pledges</h1>
+{% if pledges %}
+<ul>
+	{% for pledge in pledges %}
+	<li>{{ pledge.display_name }}</li>
+	{% endfor %}
+</ul>
+{% else %}
+<p>This user has made no pledges.</p>
+{% endif %}
